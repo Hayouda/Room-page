@@ -71,7 +71,7 @@ const Header = () => {
                     {toggleNav === 'display' && <img src={closeBar} alt="" />}
                     {toggleNav === 'no-display' && <img src={toggleBar} alt="" />}
                 </figure>
-                <a><img src={logo} alt="" /></a>
+                <div><img src={logo} alt="" /></div>
                 <li>home</li>
                 <li>shop</li>
                 <li>about</li>
