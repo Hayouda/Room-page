@@ -130,14 +130,14 @@ header figure img {
 
     .slider .slide-icons {
         position: absolute;
-        top: -60px;
+        top: -65px;
         left: 0px;
         width: 80px;
     }
     
     .slider .details {
         height: 300px;
-        padding: 35px 10%;
+        padding: 50px 10%;
     }
 
     .slider .details div {
