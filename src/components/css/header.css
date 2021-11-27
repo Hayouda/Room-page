@@ -34,6 +34,10 @@ nav li:hover {
     cursor: pointer;
 }
 
+nav .logo:hover {
+    cursor: pointer;
+}
+
 header figure img {
     transition: .5s;
 }
@@ -92,17 +96,17 @@ header figure img {
     color: black;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
     nav figure {
         display: block;
     }
 
-    header .display a img {
+    header .display .logo img {
         display: none;
 
     }
 
-    header .no-display a {
+    header .no-display .logo {
         margin-left: 60px;
     }
 
@@ -132,6 +136,7 @@ header figure img {
     }
     
     .slider .details {
+        height: 300px;
         padding: 35px 10%;
     }
 
