@@ -1,0 +1,147 @@
+body {
+    transition: .5s;
+}
+
+header nav {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    /* width: 100%; */
+}
+
+nav a {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-around; */
+}
+
+nav figure {
+    display: none;
+}
+
+nav li {
+    list-style-type: none;
+    color: #fff;
+    
+}
+
+nav li:hover {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+
+header figure img {
+    transition: .5s;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details {
+    flex:1 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    padding: 0 40px;
+    
+}
+
+.details h2 {
+    margin-bottom: 15px;
+}
+
+.details div span {
+    letter-spacing: 5px;
+}
+
+.details div span:hover {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.slide-icons {
+    padding: 20px;
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    background-color: black;
+    height:50px;
+    width: 100px;
+    align-items: center;
+}
+
+/* .slide-icons figure {
+
+    margin-top: auto;
+} */
+
+.slider figure img {
+    height: 100%;
+    /* width: 10px; */
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 400px) {
+    nav figure {
+        display: block;
+    }
+
+    header .display a img {
+        display: none;
+
+    }
+
+    header .no-display a {
+        margin-left: 60px;
+    }
+
+    header .no-display > li {
+        display: none;
+    }
+
+    header .slider {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .slider figure {
+        width: 100%;
+        position: relative;
+    }
+
+    header .slider figure img {
+        width: 100%;
+    }
+
+    .slider .slide-icons {
+        position: absolute;
+        top: -60px;
+        left: 0px;
+        width: 80px;
+    }
+    
+    .slider .details {
+        padding: 35px 10%;
+    }
+
+    .slider .details div {
+        margin: 10px 0;
+    }
+
+    
+
+    
+
+
+}
